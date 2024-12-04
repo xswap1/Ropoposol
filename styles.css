@@ -1,0 +1,150 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Fondo tipo videojuego */
+body {
+    background: linear-gradient(135deg, #1e202c, #2a2d3e); /* Degradado oscuro */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    cursor: url("https://twemoji.maxcdn.com/v/latest/72x72/1f9b4.png"), auto; /* Cursor de hueso 🦴 */
+}
+
+/* Barra superior */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(30, 32, 44, 0.95);
+    padding: 10px 20px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #FFD700;
+}
+
+.btn-buy {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 20px; /* Separa el botón de la imagen */
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-buy:hover {
+    background: #218838;
+    transform: scale(1.1);
+}
+/* Texto en movimiento */
+.marquee-container {
+    overflow: hidden;
+    position: relative;
+    margin: 80px 0 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #FFD700;
+    animation: move 15s linear infinite;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Imagen central */
+.main-image {
+    display: flex;
+    flex-direction: column; /* Alinea elementos en columna */
+    align-items: center; /* Centra la imagen y el botón horizontalmente */
+    margin: 20px auto; /* Añade margen alrededor */
+}
+
+.main-image img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
+}
+
+/* Redes sociales */
+.social-section {
+    padding: 20px;
+}
+
+.social-icons img {
+    width: 50px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.5);
+}
+
+/* Texto largo */
+.text-section {
+    padding: 20px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+/* Galería de imágenes */
+.extra-images {
+    margin: 20px 0;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.image-gallery img {
+    width: 150px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+}
